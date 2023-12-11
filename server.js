@@ -18,7 +18,7 @@ app.use(session({
     saveUninitialized: true
 }));
 
-const sequelize = new Sequelize('consultando', 'root', 'casa', {
+const sequelize = new Sequelize('consultando', 'root', 'fofo', {
     host: 'localhost',
     dialect: 'mysql'
 });
