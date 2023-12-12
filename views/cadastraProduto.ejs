@@ -1,0 +1,20 @@
+<%- include("./topo") %>
+
+
+<form action='/updateProdut' method='post'>
+    <input type='hidden' name='id' value='<%= produto.id %>'>
+    Código do Produto:<br>
+    <input type='text' name='codigo' id='codigo' value='<%= produto.codigo %>'><br>
+    Nome do Produto:<br>
+    <input type='text' name='nome' id='nome' value='<%= produto.nome %>'><br>
+    Preço:<br>
+    <input type='text' name='preco' id='preco' value='<%= produto.preco %>'><br>
+    Marca:<br>
+    <input type='text' name='marca' id='marca' value='<%= produto.marca %>'><br>
+    Cor:<br>
+    <input type='text' name='cor' id='cor' value='<%= produto.cor %>'><br>
+    <input type='submit' value='Salvar'><br>
+</form>
+
+</div>
+<%- include("rodape") %>

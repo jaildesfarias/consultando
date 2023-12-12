@@ -1,0 +1,35 @@
+
+<%- include("topo") %>
+<h1>Resultado da Busca de Produtos</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Marca</th>
+        <th>Cor</th>
+        <th>Alterar</th>
+        <th>Excluir</th>
+    </tr>
+    <% for (var i = 0; i < produtos.length; i++) { %>
+        <tr>
+            <td><%= produtos[i].id %></td>
+            <td><%= produtos[i].codigo %></td>
+            <td><%= produtos[i].nome %></td>
+            <td><%= produtos[i].preco %></td>
+            <td><%= produtos[i].marca %></td>
+            <td><%= produtos[i].cor %></td>
+            <td><a href='/>fas fa-edit</h1>
+
+                <i class='fas fa-edit'></i>
+                
+                
+                </i>>'><img src="/images/alterar.png" alt="Alterar"></a></td>
+            <td>
+                <a href='/excluiProduto.pjg' onclick="return confirm('Deseja realmente excluir?')"><img src="/images/excluir.png" alt="Excluir"></a>
+            </td>
+        </tr>
+    <% } %>
+</table>
+<%- include("rodape") %>
