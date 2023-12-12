@@ -1,7 +1,0 @@
-<%- include("topo") %>
-<h3>Você tem certeza que deseja excluir o produto <%= produto.nome %>?</h3>
-<form action='/excluirProduto' method='post'>
-    <input type='hidden' name='id' value='<%= produto.id %>'>
-    <input type='submit' value='Sim, excluir'>
-</form>
-<%- include("rodape") %>
