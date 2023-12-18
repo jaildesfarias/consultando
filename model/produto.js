@@ -5,8 +5,8 @@ const db = require('../config/database');
 const Produto = db.define('produto', {
     codigo: {
         type: Sequelize.INTEGER, 
-        primaryKey: true, // Adicionado se o campo for uma chave primária
-        autoIncrement: true // Adicionado se o campo for uma chave primária autoincrementável
+        primaryKey: true,
+        autoIncrement: true 
     },
     nome: {
         type: Sequelize.STRING(48) 
