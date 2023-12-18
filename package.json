@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },
+   },
   "keywords": [],
   "author": "jaildesfarias",
   "license": "ISC",
@@ -15,4 +15,3 @@
     "sequelize": "^6.35.1"
   },
   "description": ""
-}
